@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Weather Dashboard</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Weather Dashboard</h1>
+</header>
+
+<div class="ticker-container">
+  <div class="ticker-track" id="weatherTicker"></div>
+</div>
+
+
+
+<div class="container">
+
+<div class="left">
+
+<h3>Enter a City Name</h3>
+
+<input type="text" id="cityInput" placeholder="E.g., Delhi, Mumbai, Nagpur">
+
+<button id="searchBtn">Search</button>
+
+<div class="or">or</div>
+
+<button id="locationBtn" class="location">Use Current Location</button>
+
+</div>
+
+<div class="right">
+
+<div class="current-weather" id="currentWeather">
+
+<h2 id="cityName">City</h2>
+
+<div class="weather-info">
+
+<div class="details">
+<p id="temp"></p>
+<p id="wind"></p>
+<p id="humidity"></p>
+<p id="condition"></p>
+</div>
+
+<img id="icon">
+
+</div>
+
+</div>
+
+<h2 class="forecast-title">5-Day Forecast</h2>
+
+<div class="forecast" id="forecast"></div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
